@@ -13,7 +13,7 @@ def read_item(item_id: int, q: str = None):
     return {"item_id": item_id, "q": q}
 
 @app.get("/hello/{name}")
-def read_item(name:,str = None):
+def read_item(name: str = None):
     return {"hello": name}
 
 handler = Mangum(app)
